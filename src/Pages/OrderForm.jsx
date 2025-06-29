@@ -24,7 +24,7 @@ const OrderForm = () => {
         payload.append('contactno',formData.contactno);
         payload.append('address',formData.address);
 
-        const res = await fetch("http://localhost:5000/api/order-placed",{
+        const res = await fetch("https://suidhaaga2.onrender.com/api/order-placed",{
             method:'POST',
             body:payload,
             credentials:'include'

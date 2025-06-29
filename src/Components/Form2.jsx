@@ -18,7 +18,7 @@ const Form2 = () => {
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const res = await fetch("http://localhost:5000/api/tailor-registered",{
+        const res = await fetch("https://suidhaaga2.onrender.com/api/tailor-registered",{
             method:"POST",
                 headers:{
                     "Content-Type":"application/json"

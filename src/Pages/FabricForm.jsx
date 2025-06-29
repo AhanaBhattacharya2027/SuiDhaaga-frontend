@@ -28,7 +28,7 @@ const FabricForm = () =>{
         formData.append('image',fabricData.image);
 
 
-        const res = await fetch("http://localhost:5000/api/fabric-registered",{
+        const res = await fetch("https://suidhaaga2.onrender.com/api/fabric-registered",{
             method:'POST',
             body:formData,
             credentials: 'include'

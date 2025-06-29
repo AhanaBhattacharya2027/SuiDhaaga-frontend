@@ -19,7 +19,7 @@ const Form3 = () => {
 
     const handleSubmit = async (e) =>{
         e.preventDefault();
-        const res = await fetch("http://localhost:5000/api/seller-registered",{
+        const res = await fetch("https://suidhaaga2.onrender.com/api/seller-registered",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
