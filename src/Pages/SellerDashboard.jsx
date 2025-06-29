@@ -11,7 +11,7 @@ const SellerDashboard = () => {
     const [error,setError] = useState(null);
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/api/seller-dashboard/${id}`)
+        fetch(`https://suidhaaga2.onrender.com/api/seller-dashboard/${id}`)
         .then(res=>res.json())
         .then(data=>{
             if(data.seller){
