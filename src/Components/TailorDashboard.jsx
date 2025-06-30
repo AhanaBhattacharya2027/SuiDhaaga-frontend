@@ -11,7 +11,7 @@ const TailorDashboard = () =>{
     const navigate = useNavigate();
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/api/tailor-dashboard/${id}`)
+        fetch(`https://suidhaaga2.onrender.com/api/tailor-dashboard/${id}`)
         .then(res=>res.json())
         .then(data=>{
             if(data.tailor){
