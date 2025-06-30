@@ -7,7 +7,7 @@ const AllDesigns = () => {
     const[designs,setDesigns] = useState(null);
     const[error,setError] = useState(null);
     useEffect(()=>{
-        fetch("http://localhost:5000/api/all-designs")
+        fetch("https://suidhaaga2.onrender.com/api/all-designs")
         .then(res=>res.json())
         .then(data=>{
             
