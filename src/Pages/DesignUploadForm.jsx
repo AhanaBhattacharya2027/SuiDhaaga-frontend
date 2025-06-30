@@ -27,7 +27,7 @@ const DesignUploadForm = () =>{
         payload.append('imageback',formData.imageback);
         payload.append('makingCharges',formData.makingCharges);
 
-        const res = await fetch("https://suidhaaga2.onrender.com/design-registered",{
+        const res = await fetch("https://suidhaaga2.onrender.com/api/design-registered",{
             method:'POST',
             body:payload,
             credentials:'include'
