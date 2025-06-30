@@ -15,6 +15,7 @@ const LoginForm = ({placeholder,id,password,route}) =>{
         e.preventDefault();
         const res= await fetch(`https://suidhaaga2.onrender.com/api/${route}`,{
             method:"POST",
+            credentials:"include",
             headers:{
                 "Content-Type":"application/json"
             },
